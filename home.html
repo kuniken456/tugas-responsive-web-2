@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<title>Axylon Commission's</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: center;
+    background: url('images/ELysia.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    margin-top: 30px;
+    padding-top: 50px;
+}
+
+button {
+    width: 180px;
+    letter-spacing: 4px;
+    background-color: white;
+    padding: 12px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: transform 0.2s ease; /** transform digunakan agar terdapat animasi dan tidak terlihat statik **/
+    
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+/** menggunakan button:hover agar pada saat button di hover maka akan ada animasi dan tidak terlihat statik **/
+button:hover {
+   transform: scale(1.1);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+}
+
+.status {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    line-height: 1.8;
+    letter-spacing: 4px;
+    font-weight: 300;
+}
+
+.contact {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 4px;
+    font-weight: 300;
+    padding-bottom: 10px
+}
+
+.open {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: #00FF00;
+    letter-spacing: 6px;
+}
+
+footer {
+    width: 100%;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+  
+.social-button {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+footer img {
+    margin-bottom: 8px;
+    width: 30px;
+    height: auto;
+    text-align: center;
+}
+
+footer button {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    width: 200px;
+    letter-spacing: 2px;
+    background-color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/** menggunakan @media agar pada saat ditampilkan di layar yang berukuran kurang dari 600px atau layar yang kecil maka akan menampilkan tampilan yang berbeda **/
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .button-container button {
+        min-width: 200px;
+        margin-bottom: 10px;
+        border-radius: 999px;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+      .status, .contact {
+        font-size: 16px;
+    }
+
+    footer button {
+        font-size: 22px;
+    }
+}
+</style>
+</head>
+<body>
+<div class="overlay">
+  <header>
+    <div class="button-container">
+        <button>
+            <a href="home.html" class="button">HOME</a>
+        </button>
+        <button>
+            <a href="index.html" class="button">PORTFOLIO</a>
+        </button>
+        <button>
+            <a href="#" class="button">TOS</a>
+        </button>
+    </div>
+  </header>
+
+<main>
+    <h1>AXYLON<br>COMMISSION'S</h1>
+    <img src="images/profile.jpg" alt="Profile" class="profile-img">
+    <div class="status">
+        Status:<br>
+    </div>
+    <div class="contact">
+        Commissions: <span class="open">OPEN</span>
+        <p>Mail: axylon.illust@gmail.com</p>
+        <p>Discord: Axylon1</p>
+    </div>
+</main>
+
+<footer>
+    <p>Follow Me:</p>
+    <div class="button-container">
+        <button>
+            <a href="https://www.instagram.com/axylon_" target="_blank" class="social-button">
+                <img src="Icon/instagram-icon.svg" alt="Instagram" width="30" height="30">
+                Instagram
+            </a>
+        </button>
+        <button>
+            <a href="https://www.pixiv.net/en/users/28261692" target="_blank" class="social-button">
+                <img src="Icon/pixiv-icon.svg" alt="Pixiv" width="30" height="30">
+                Pixiv
+            </a>
+        </button>
+        <button>
+            <a href="https://x.com/Axylon1" target="_blank" class="social-button">
+                <img src="Icon/twitter-icon.svg" alt="Twitter" width="30" height="30">
+                Twitter
+            </a>
+        </button>
+    </div>
+</footer>
+</div>
+</body>
+</html>
